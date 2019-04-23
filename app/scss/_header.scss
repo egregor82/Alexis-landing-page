@@ -1,0 +1,169 @@
+.main-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    z-index: 1000;
+    background-color: $white;
+    @include media-breakpoint-down(md){
+        height: 50px;
+    }
+}
+
+.main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    @include media-breakpoint-down(md){
+        display: block;
+        text-align: right;
+    }
+}
+
+.scroll{
+    color: #272727;
+    font-size: 14px;
+    padding: 0 8px;
+    display: inline-block;
+    transition: all .3s linear;
+    &:hover{
+        text-decoration: none;
+        color: $red;
+    }
+    &.active{
+        color: $red;
+    }
+}
+
+.logo-block{
+    margin-left: -8px;
+    @include media-breakpoint-down(md){
+        display: inline-block;
+        width: 100%;
+        text-align: left;
+    }
+}
+.header-links-block{
+    text-align: right;
+    margin-right: -8px;
+    flex-grow: 1;
+    font-weight: 600;
+    @include media-breakpoint-down(md) {
+        display: block;
+        height: auto;
+        margin: -25px -15px;
+        //box-shadow: 2px 14px 73px 0px rgba(0, 0, 0, 0.29);
+        z-index: 1;
+        //transform: translateY(-1px);
+        a{
+            display: block;
+            background-color: $white;
+            text-align: center;
+            animation: slide-down 1s ease 0s forwards;
+            //border-bottom: 1px solid $red;
+        }
+    } 
+}
+
+.display-menu {
+    @include media-breakpoint-down(md) {
+        display: none;
+    } 
+}
+
+@keyframes slide-down {
+    from {
+        max-height: 0;
+        padding: 0;
+    }
+    to {
+        max-height: 44px;
+        padding: 12px 16px;
+    }
+  }
+
+.logo{
+    font-family: 'Meie Script', cursive;
+    font-size: 35px;
+    color: #616161;
+    .red-span{
+        color: $red;
+    }
+}
+
+#nav-burger {
+    position: relative;
+    display: none;
+    @include media-breakpoint-down(md) {
+        display: inline-block;
+        z-index: 1100;
+    }
+    #menu-btn {
+        display: block;
+        min-width: 40px ;
+        height: 40px;
+        border-radius: 50%;
+        position: relative;
+        background-color: #e0e0e0;
+        margin-top: -64px;
+        span {
+            position: absolute;
+            background-color: $black;
+            top: 50%;
+            margin-top: -1px;
+            margin-left: -10px;
+            left: 50%;
+            height: 2px;
+            width: 20px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                background-color: $black;
+                top: 50%;
+                margin-top: -1px;
+                margin-left: -10px;
+                left: 50%;
+                height: 2px;
+                width: 20px;
+                transition: all .3s linear;
+                transform: translateY(-5px);
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                background-color: $black;
+                top: 50%;
+                margin-top: -1px;
+                margin-left: -10px;
+                left: 50%;
+                height: 2px;
+                width: 20px;
+                transition: all .5s linear;
+                transform: translateY(5px);
+            }
+        }
+
+        .slim {
+            &:before {
+                transform: translateY(-1px);
+            }
+
+            &:after {
+                transform: translateY(1px);
+            }
+        }
+
+        &:hover {
+            background-color: $red;
+        }
+
+        &.active {
+            background-color: $red;
+        }
+    }
+
+}

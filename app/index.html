@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Alexis</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	<!-- Fonts start-->
+	<link
+		href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Meie+Script" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css"
+		integrity="sha384-QokYePQSOwpBDuhlHOsX0ymF6R/vLk/UQVz3WHa6wygxI5oGTmDTv8wahFOSspdm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/brands.css"
+		integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css"
+		integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous">
+	<!-- Fonts end-->
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+	<link rel="stylesheet" href="css/main.min.css">
+	<!--Handlebars script start-->
+	<script id="Handle-template-portfolio" type="text/x-handlebars-template">
+		{{#each portfolio}}
+		<div class="img-block">
+			<a class="portfolio-img" href="{{path}}"
+				data-lightbox="portfolio-set" data-title="{{data-title}}"><img class="portfolio-image"
+					src="{{srcpath}}" alt="" /></a>
+			<div class="mark-img">
+				<span class="cross"></span>
+				<span class="cross"></span>
+			</div>
+			<div class="appear-block">
+				<div class="span-block">
+					<span class="border-span quart red-block-span"></span>
+					<span class="border-span quart green-block-span"></span>
+					<span class="border-span quart purple-block-span"></span>
+					<span class="border-span quart orange-block-span"></span>
+				</div>
+				<div class="appear-block-info">
+					<p class="appear-block-info-p"></p>
+				</div>
+			</div>
+		</div>
+		{{/each}}
+	</script>
+	<!--Handlebars script end-->
+</head>
+
+<body>
+	<header class="main-header shadow-block">
+		<nav class="main-nav wrapper">
+			<div class="logo-block">
+				<a href="#header" class="logo scroll"><span class="red-span">A</span>lexis</a>
+			</div>
+			<div id="nav-burger">
+					<a href="#" id="menu-btn">
+						<span class="burger"></span>
+					</a>
+			</div>
+			<div class="header-links-block display-menu">
+				<a href="#about-us" class="scroll menu-link active">About Us</a>
+				<a href="#our-focus" class="scroll menu-link">Our Focus</a>
+				<a href="#portfolio" class="scroll menu-link">Portfolio</a>
+				<a href="#our-team" class="scroll menu-link">Our Team</a>
+				<a href="#work-steps" class="scroll menu-link">Work Steps</a>
+				<a href="#pricing" class="scroll menu-link">Pricing</a>
+				<a href="#testimonials" class="scroll menu-link">Testimonials</a>
+				<a href="#blog" class="scroll menu-link">Blog</a>
+				<a href="#contact" class="scroll menu-link">Contact</a>
+			</div>
+
+
+		</nav>
+	</header>
+	<main>
+		<section class="header-section section-wrapper darkblue-section" id="header">
+			<div class="wrapper">
+				<h1 class="header-section-h1">We design things with love and passion.</h1>
+				<a href="#" class="main-btn to-uppercase red-btn btn-bg-red">our works</a>
+				<div class="row main-goals">
+					<div class="col-md-4 goal-block">
+						<img src="img/header-section/price-logo.png" alt="fixed price logo">
+						<p class="goal-text to-uppercase green-text">fixed price projects</p>
+					</div>
+					<div class="col-md-4 goal-block">
+						<img src="img/header-section/time-logo.png" alt="time logo">
+						<p class="goal-text to-uppercase purple-text">receive on time</p>
+					</div>
+					<div class="col-md-4 goal-block">
+						<img src="img/header-section/check-logo.png" alt="check logo">
+						<p class="goal-text to-uppercase orange-text">satisfaction guranteed</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about-us section-wrapper white-section" id="about-us">
+			<div class="wrapper about-us-wrapper">
+				<div class="inner d-flex align-items-center">
+					<div class="about-us-img-container gradient-block red">
+							<img src="img/About-us/about-us.png" alt="about us">
+					</div>
+					<div class="about-us-block shadow-block white-section">
+						<p class="count-block corner">01</p>
+						<div class="info-block">
+							<h2 class="header-h2">About Us</h2>
+							<p>Analytics release series A financing
+								launch party interaction design
+								android angel investor. Vesting period
+								social media sales conversion launch
+								party rockstar incubator customer social
+								proof graphical user interface technology
+								supply chain. Non-disclosure agreement
+								rockstar creative partner network launch
+								party social proof paradigm shift long
+								tail influencer.</p>
+							<p>Monetization validation success. Seed round channels product
+								management. Customer non-disclosure agreement strategy
+								android growth hacking ramen buyer.</p>
+						</div>
+						<span class="border-span quart red-block-span"></span>
+						<span class="border-span quart green-block-span"></span>
+						<span class="border-span quart purple-block-span"></span>
+						<span class="border-span quart orange-block-span"></span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="our-focus section-wrapper grey-section" id="our-focus">
+			<div class="wrapper">
+				<div class="section-header-block">
+					<p class="count-block center">02</p>
+					<h2 class="header-h2">Our Focus</h2>
+					<p class="header-p">We understand your requirement and provide quality works.</p>
+				</div>
+				<div class="row our-focus-wrapper">
+					<div class="col-lg-3 col-md-6">
+						<div class="our-focus-block shadow-block">
+							<div class="our-focus-info">
+								<img src="img/our-focus/web-design.png" alt="web design logo">
+								<h3 class="our-focus-block-header">Web Design</h3>
+								<p>Analytics release series A financing launch party
+									interaction design android angel investor.</p>
+							</div>
+							<span class="border-span red-block-span"></span>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="our-focus-block shadow-block">
+							<div class="our-focus-info">
+								<img src="img/our-focus/ux-design.png" alt="ux design logo">
+								<h3 class="our-focus-block-header">UX Design</h3>
+								<p>Analytics release series A financing launch party
+									interaction design android angel investor.</p>
+							</div>
+							<span class="border-span green-block-span"></span>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="our-focus-block shadow-block">
+							<div class="our-focus-info">
+								<img src="img/our-focus/photography.png" alt="photography logo">
+								<h3 class="our-focus-block-header">Photography</h3>
+								<p>Analytics release series A financing launch party
+									interaction design android angel investor.</p>
+							</div>
+							<span class="border-span purple-block-span"></span>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="our-focus-block shadow-block">
+							<div class="our-focus-info">
+								<img src="img/our-focus/app-dev.png" alt="app-dev logo">
+								<h3 class="our-focus-block-header">App Development</h3>
+								<p>Analytics release series A financing launch party
+									interaction design android angel investor.</p>
+							</div>
+							<span class="border-span orange-block-span"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="explore section-wrapper darkblue-section">
+			<h4 class="explore-header">Explore Our Awesomeness</h4>
+			<a class="js-modal-btn" data-video-id="DmFK4Uz4aYY"><img src="img/Explore/play-btn.png" alt="play btn logo"></a>
+			<p class="explore-p">Click to play the video</p>
+		</section>
+		<section class="portfolio section-wrapper white-section" id="portfolio">
+			<div class="wrapper">
+				<div class="section-header-block">
+					<p class="count-block center">03</p>
+					<h2 class="header-h2">Portfolio</h2>
+					<p class="header-p">We understand your requirement and provide quality works.</p>
+				</div>
+				<div class="portfolio-img-wrapper" id="portfolio-img-wrapper">
+	
+				</div>
+			</div>
+		</section>
+		<section class="our-team section-wrapper grey-section" id="our-team">
+			<div class="wrapper">
+				<div class="section-header-block">
+					<p class="count-block center">04</p>
+					<h2 class="header-h2">Our Team</h2>
+					<p class="header-p">We understand your requirement and provide quality works.</p>
+				</div>
+				<div class="tabs">
+					<div class="row our-team-wrapper">
+						<div class="col-md-3 triangle-holder active">
+							<div class="team-member shadow-block">
+								<div class="team-member-wrapper">
+									<div class="gradient-block red">
+										<img src="img/Team/member_1.jpg" alt="Founder & CEO">
+									</div>
+									<p class="member-name red-text">Michael Schmitt</p>
+									<p class="member-position"> Founder & CEO </p>
+								</div>
+								<span class="border-span red-block-span"></span>
+							</div>
+							<div class="triangle"></div>
+						</div>
+						<div class="col-md-3 triangle-holder">
+							<div class="team-member shadow-block">
+								<div class="team-member-wrapper">
+									<div class="gradient-block green">
+										<img src="img/Team/member_3.jpg" alt="Lead Developer">
+									</div>
+									<p class="member-name green-text">David Kramer</p>
+									<p class="member-position"> Lead Developer </p>
+								</div>
+								<span class="border-span green-block-span"></span>
+							</div>
+							<div class="triangle"></div>
+						</div>
+						<div class="col-md-3 triangle-holder">
+							<div class="team-member shadow-block">
+								<div class="team-member-wrapper">
+									<div class="gradient-block purple">
+										<img src="img/Team/member_2.jpg" alt="Designer">
+									</div>
+									<p class="member-name purple-text">Anna Schroder</p>
+									<p class="member-position">Designer</p>
+								</div>
+								<span class="border-span purple-block-span"></span>
+							</div>
+							<div class="triangle"></div>
+						</div>
+						<div class="col-md-3 triangle-holder">
+							<div class="team-member shadow-block">
+								<div class="team-member-wrapper">
+									<div class="gradient-block orange">
+										<img src="img/Team/member_4.jpg" alt="Consultant">
+									</div>
+									<p class="member-name orange-text">Jason Teichmann</p>
+									<p class="member-position">Consultant</p>
+								</div>
+								<span class="border-span orange-block-span"></span>
+							</div>
+							<div class="triangle"></div>
+						</div>
+					</div>
+					<div class="tabs__content active">
+						<div class="member-info-block">
+							<div class="info-block-wrapper shadow-block">
+								<h3>About Michael</h3>
+								<div class="row">
+									<div class="col-md-8">
+										<p>Monetization first mover advantage iPad. Interaction design buzz handshake.
+											Stealth agile development branding. Backing facebook hackathon conversion
+											startup scrum project niche market business-to-consumer paradigm shift traction.
+											Rockstar bandwidth twitter ownership success disruptive series A financing user
+											experience buyer client social proof validation hypotheses. User experience
+											crowdfunding facebook seed round A/B testing mass market.</p>
+									</div>
+									<div class="col-md-3 offset-md-1 d-flex align-items-center member-social-wrapper">
+										<img src="img/Team/social_conect.png" alt="social">
+										<div class="member-social-links">
+											<div class="social-block">
+												<a href="https://uk-ua.facebook.com/" target="blank" id="soc-logo"><i class="fab fa-facebook-f"></i></a>
+												<a href="https://uk-ua.facebook.com/" target="blank" id="soc-link">Facebook</a>
+											</div>
+											<div class="social-block">
+												<a href="https://twitter.com/" target="blank" id="soc-logo"><i class="fab fa-twitter"></i></a>
+												<a href="https://twitter.com/" target="blank" id="soc-link">Twitter</a>
+											</div>
+											<div class="social-block">
+												<a href="https://www.linkedin.com/feed/" target="blank" id="soc-logo"><i class="fab fa-linkedin-in"></i></a>
+												<a href="https://www.linkedin.com/feed/" target="blank" id="soc-link">LinkedIn</a>
+											</div>
+											<div class="social-block">
+												<a href="https://www.instagram.com/" target="blank" id="soc-logo"><i class="fab fa-instagram"></i></a>
+												<a href="https://www.instagram.com/" target="blank" id="soc-link">Instagram</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tabs__content">
+						<div class="member-info-block">
+							<div class="info-block-wrapper shadow-block">
+								<h3>About David</h3>
+								<div class="row">
+									<div class="col-md-8">
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, ab vel perferendis
+											animi odio omnis? Assumenda voluptatum, vitae, aperiam est suscipit, repudiandae
+											repellendus consequatur beatae optio natus nostrum quod distinctio.</p>
+									</div>
+									<div class="col-md-3 offset-md-1 d-flex align-items-center member-social-wrapper">
+										<img src="img/Team/social_conect.png" alt="social">
+										<div class="member-social-links">
+												<div class="social-block">
+													<a href="https://uk-ua.facebook.com/" target="blank" id="soc-logo"><i class="fab fa-facebook-f"></i></a>
+													<a href="https://uk-ua.facebook.com/" target="blank" id="soc-link">Facebook</a>
+												</div>
+												<div class="social-block">
+													<a href="https://twitter.com/" target="blank" id="soc-logo"><i class="fab fa-twitter"></i></a>
+													<a href="https://twitter.com/" target="blank" id="soc-link">Twitter</a>
+												</div>
+												<div class="social-block">
+													<a href="https://www.linkedin.com/feed/" target="blank" id="soc-logo"><i class="fab fa-linkedin-in"></i></a>
+													<a href="https://www.linkedin.com/feed/" target="blank" id="soc-link">LinkedIn</a>
+												</div>
+												<div class="social-block">
+													<a href="https://www.instagram.com/" target="blank" id="soc-logo"><i class="fab fa-instagram"></i></a>
+													<a href="https://www.instagram.com/" target="blank" id="soc-link">Instagram</a>
+												</div>
+											</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tabs__content">
+						<div class="member-info-block">
+							<div class="info-block-wrapper shadow-block">
+								<h3>About Anna</h3>
+								<div class="row">
+									<div class="col-md-8">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, corporis ipsum
+											itaque placeat voluptatem quis natus accusamus amet dolorum veritatis! Accusamus
+											quaerat autem officia blanditiis ullam, odit neque temporibus placeat.</p>
+									</div>
+									<div class="col-md-3 offset-md-1 d-flex align-items-center member-social-wrapper">
+										<img src="img/Team/social_conect.png" alt="social">
+										<div class="member-social-links">
+												<div class="social-block">
+													<a href="https://uk-ua.facebook.com/" target="blank" id="soc-logo"><i class="fab fa-facebook-f"></i></a>
+													<a href="https://uk-ua.facebook.com/" target="blank" id="soc-link">Facebook</a>
+												</div>
+												<div class="social-block">
+													<a href="https://twitter.com/" target="blank" id="soc-logo"><i class="fab fa-twitter"></i></a>
+													<a href="https://twitter.com/" target="blank" id="soc-link">Twitter</a>
+												</div>
+												<div class="social-block">
+													<a href="https://www.linkedin.com/feed/" target="blank" id="soc-logo"><i class="fab fa-linkedin-in"></i></a>
+													<a href="https://www.linkedin.com/feed/" target="blank" id="soc-link">LinkedIn</a>
+												</div>
+												<div class="social-block">
+													<a href="https://www.instagram.com/" target="blank" id="soc-logo"><i class="fab fa-instagram"></i></a>
+													<a href="https://www.instagram.com/" target="blank" id="soc-link">Instagram</a>
+												</div>
+											</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tabs__content">
+						<div class="member-info-block">
+							<div class="info-block-wrapper shadow-block">
+								<h3>About Jason</h3>
+								<div class="row">
+									<div class="col-md-8">
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad deserunt molestias
+											culpa atque quidem, ipsam eveniet. Vitae accusamus voluptates explicabo voluptas
+											delectus voluptatibus beatae, sunt doloremque, adipisci nobis recusandae id?</p>
+									</div>
+									<div class="col-md-3 offset-md-1 d-flex align-items-center member-social-wrapper">
+										<img src="img/Team/social_conect.png" alt="social">
+										<div class="member-social-links">
+												<div class="social-block">
+													<a href="https://uk-ua.facebook.com/" target="blank" id="soc-logo"><i class="fab fa-facebook-f"></i></a>
+													<a href="https://uk-ua.facebook.com/" target="blank" id="soc-link">Facebook</a>
+												</div>
+												<div class="social-block">
+													<a href="https://twitter.com/" target="blank" id="soc-logo"><i class="fab fa-twitter"></i></a>
+													<a href="https://twitter.com/" target="blank" id="soc-link">Twitter</a>
+												</div>
+												<div class="social-block">
+													<a href="https://www.linkedin.com/feed/" target="blank" id="soc-logo"><i class="fab fa-linkedin-in"></i></a>
+													<a href="https://www.linkedin.com/feed/" target="blank" id="soc-link">LinkedIn</a>
+												</div>
+												<div class="social-block">
+													<a href="https://www.instagram.com/" target="blank" id="soc-logo"><i class="fab fa-instagram"></i></a>
+													<a href="https://www.instagram.com/" target="blank" id="soc-link">Instagram</a>
+												</div>
+											</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="our-progress section-wrapper" data-parallax="scroll" data-image-src="img/our-progress/bg.png">
+			<div class="wrapper row justify-content-between">
+				<div class="col-lg-3 col-sm-6 our-progress-info">
+					<img src="img/our-progress/graph.png" alt="graph logo">
+					<h4 class="our-progress-header">12,458+</h4>
+					<p>Project competed</p>
+					<span class="outer-span red"><span class="inner-span red"></span></span>
+				</div>
+				<div class="col-lg-3 col-sm-6 our-progress-info">
+					<img src="img/our-progress/client.png" alt="client logo">
+					<h4 class="our-progress-header">1,796+</h4>
+					<p>Satisfied Clients</p>
+					<span class="outer-span green"><span class="inner-span green"></span></span>
+				</div>
+				<div class="col-lg-3 col-sm-6 our-progress-info">
+					<img src="img/our-progress/feedbacks.png" alt="feedbacks logo">
+					<h4 class="our-progress-header">1,000+</h4>
+					<p>Positive Feedbacks</p>
+					<span class="outer-span purple"><span class="inner-span purple"></span></span>
+				</div>
+				<div class="col-lg-3 col-sm-6 our-progress-info">
+					<img src="img/our-progress/release.png" alt="release logo">
+					<h4 class="our-progress-header">1500+</h4>
+					<p>Freebies Released</p>
+					<span class="outer-span orange"><span class="inner-span orange"></span></span>
+				</div>
+			</div>
+		</section>
+		<section class="work-steps section-wrapper white-section" id="work-steps">
+			<div class="wrapper">
+				<div class="section-header-block">
+					<p class="count-block center">05</p>
+					<h2 class="header-h2">Work Steps</h2>
+					<p class="header-p">We understand your requirement and provide quality works.</p>
+				</div>
+				<div class="work-steps-wrapper d-flex flex-column align-items-center">
+					<div class="step one">
+						<div class="step-wrapper shadow-block left-offset">
+							<div class="step-main-info">
+								<p class="count-block-small">01</p>
+								<span class="angle-line"></span>
+								<h4 class="step-header">Project Understanding</h4>
+								<p class="step-p">Buyer strategy incubator niche market startup. Entrepreneur non disclosure
+									agreement MVP traction beta social media investor accelerator.</p>
+							</div>
+							<span class="border-span red-block-span"></span>
+						</div>
+					</div>
+					<div class="step two">
+						<div class="step-wrapper shadow-block right-offset">
+							<div class="step-main-info">
+								<p class="count-block-small">02</p>
+								<span class="angle-line"></span>
+								<h4 class="step-header">Research & Planning</h4>
+								<p class="step-p">Buyer strategy incubator niche market startup. Entrepreneur non disclosure
+									agreement MVP traction beta social media investor accelerator.</p>
+							</div>
+							<span class="border-span green-block-span"></span>
+						</div>
+					</div>
+					<div class="step three">
+						<div class="step-wrapper shadow-block left-offset">
+							<div class="step-main-info">
+								<p class="count-block-small">03</p>
+								<span class="angle-line"></span>
+								<h4 class="step-header">Wireframe & Design</h4>
+								<p class="step-p">Buyer strategy incubator niche market startup. Entrepreneur non disclosure
+									agreement MVP traction beta social media investor accelerator.</p>
+							</div>
+							<span class="border-span purple-block-span"></span>
+						</div>
+					</div>
+					<div class="step four">
+						<div class="step-wrapper shadow-block right-offset">
+							<div class="step-main-info">
+								<p class="count-block-small">04</p>
+								<span class="angle-line"></span>
+								<h4 class="step-header">Development</h4>
+								<p class="step-p">Buyer strategy incubator niche market startup. Entrepreneur non disclosure
+									agreement MVP traction beta social media investor accelerator.</p>
+							</div>
+							<span class="border-span orange-block-span"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="pricing section-wrapper grey-section" id="pricing">
+			<div class="wrapper">
+				<div class="section-header-block">
+					<p class="count-block center">06</p>
+					<h2 class="header-h2">Pricing Table</h2>
+					<p class="header-p">We understand your requirement and provide quality works.</p>
+				</div>
+				<div class="row">
+					<div class="col-md-4 pricing-block">
+						<span class="border-span green-block-span"></span>
+						<div class="pricing-info shadow-block">
+							<h4 class="pricing-info-header">Starter</h4>
+							<span class="pricing-outer-span green"><span class="pricing-inner-span green">
+									<p class="price">$125</p>
+									<p>Per Month</p>
+								</span></span>
+							<p class="main-offers"><b>200GB</b> Online Storage</p>
+							<p class="main-offers"><b>20</b> Files Per Day</p>
+							<p class="main-offers"><b>2TB</b> Monthly Bandwidth</p>
+							<p class="main-offers"><b><i class="fas fa-check"></i></b> Secure Platform</p>
+							<p class="main-offers"><b><i class="fas fa-check"></i></b> 24/7 Customer Support</p>
+							<p class="main-offers last"><b><i class="fas fa-check"></i></b> Fast & Reliable</p>
+							<a href="#" class="main-btn to-uppercase green-btn">get started</a>
+						</div>
+					</div>
+					<div class="col-md-4 pricing-block">
+						<span class="border-span red-block-span"></span>
+						<div class="pricing-info shadow-block">
+							<h4 class="pricing-info-header">Ultimate</h4>
+							<span class="pricing-outer-span red"><span class="pricing-inner-span red">
+									<p class="price">$195</p>
+									<p>Per Month</p>
+								</span></span>
+							<p class="main-offers"><b>800GB</b> Online Storage</p>
+							<p class="main-offers"><b>Unlimited</b> Files Per Day</p>
+							<p class="main-offers"><b>10TB</b> Monthly Bandwidth</p>
+							<p class="main-offers"><b><i class="fas fa-check"></i></b> Secure Platform</p>
+							<p class="main-offers"><b><i class="fas fa-check"></i></b> 24/7 Customer Support</p>
+							<p class="main-offers last"><b><i class="fas fa-check"></i></b> Fast & Reliable</p>
+							<a href="#" class="main-btn to-uppercase red-btn">get started</a>
+						</div>
+					</div>
+					<div class="col-md-4 pricing-block">
+						<span class="border-span purple-block-span"></span>
+						<div class="pricing-info shadow-block">
+							<h4 class="pricing-info-header">Professional</h4>
+							<span class="pricing-outer-span purple"><span class="pricing-inner-span purple">
+									<p class="price">$145</p>
+									<p>Per Month</p>
+								</span></span>
+							<p class="main-offers"><b>200GB</b> Online Storage</p>
+							<p class="main-offers"><b>20</b> Files Per Day</p>
+							<p class="main-offers"><b>2TB</b> Monthly Bandwidth</p>
+							<p class="main-offers"><b><i class="fas fa-check"></i></b> Secure Platform</p>
+							<p class="main-offers"><b><i class="fas fa-check"></i></b> 24/7 Customer Support</p>
+							<p class="main-offers last"><b><i class="fas fa-check"></i></b> Fast & Reliable</p>
+							<a href="#" class="main-btn to-uppercase purple-btn">get started</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="testimonials section-wrapper darkblue-section" id="testimonials">
+			<div class="wrapper">
+				<div class="section-header-block">
+					<p class="count-block center">07</p>
+					<h2 class="header-h2">Testimonials</h2>
+					<p class="header-p">We understand your requirement and provide quality works.</p>
+				</div>
+				<div class="slick-slider">
+					<div class="testimonials-main-block d-flex align-items-center">
+						<div class="gradient-block red">
+							<img src="img/testimonials/first.jpg" alt="customer">
+						</div>
+						<div class="testimonial shadow-block">
+							<p class="block-corner">“</p>
+							<div class="testimonial-info">
+								<p class="testimonial-text">Deployment ownership non-disclosure agreement vesting period
+									crowdfunding
+									success influencer partnership equity series A financing network effects user
+									experience crowdsource. Burn rate stock bootstrapping direct mailing release client
+									traction creative facebook monetization crowdfunding rockstar.</p>
+								<p class="sign">Melina</p>
+								<p>Melina Albrecht</p>
+								<p class="red-text">Founder, TingTong</p>
+							</div>
+							<span class="border-span red-block-span"></span>
+						</div>
+					</div>
+					<div class="testimonials-main-block d-flex align-items-center">
+						<div class="gradient-block green">
+							<img src="img/testimonials/second.jpg" alt="customer">
+						</div>
+						<div class="testimonial shadow-block">
+							<p class="block-corner">“</p>
+							<div class="testimonial-info">
+								<p class="testimonial-text">Deployment ownership non-disclosure agreement vesting period
+									crowdfunding
+									success influencer partnership equity series A financing network effects user
+									experience crowdsource. Burn rate stock bootstrapping direct mailing release client
+									traction creative facebook monetization crowdfunding rockstar.</p>
+								<p class="sign">John</p>
+								<p>John Deere</p>
+								<p class="green-text">Founder, John Deere</p>
+							</div>
+							<span class="border-span green-block-span"></span>
+						</div>
+					</div>
+					<div class="testimonials-main-block d-flex align-items-center">
+						<div class="gradient-block purple">
+							<img src="img/testimonials/third.jpg" alt="customer">
+						</div>
+						<div class="testimonial shadow-block">
+							<p class="block-corner">“</p>
+							<div class="testimonial-info">
+								<p class="testimonial-text">Deployment ownership non-disclosure agreement vesting period
+									crowdfunding
+									success influencer partnership equity series A financing network effects user
+									experience crowdsource. Burn rate stock bootstrapping direct mailing release client
+									traction creative facebook monetization crowdfunding rockstar.</p>
+								<p class="sign">Emma</p>
+								<p>Emma Watson</p>
+								<p class="purple-text">An actress</p>
+							</div>
+							<span class="border-span purple-block-span"></span>
+						</div>
+					</div>
+					<div class="testimonials-main-block d-flex align-items-center">
+						<div class="gradient-block orange">
+							<img src="img/testimonials/fourth.jpg" alt="customer">
+						</div>
+						<div class="testimonial shadow-block">
+							<p class="block-corner">“</p>
+							<div class="testimonial-info">
+								<p class="testimonial-text">Deployment ownership non-disclosure agreement vesting period
+									crowdfunding
+									success influencer partnership equity series A financing network effects user
+									experience crowdsource. Burn rate stock bootstrapping direct mailing release client
+									traction creative facebook monetization crowdfunding rockstar.</p>
+								<p class="sign">Barbara</p>
+								<p>Barbara Streisand</p>
+								<p class="orange-text">An actress</p>
+							</div>
+							<span class="border-span orange-block-span"></span>
+						</div>
+					</div>
+					<div class="testimonials-main-block d-flex align-items-center">
+						<div class="gradient-block red">
+							<img src="img/testimonials/fifth.jpg" alt="customer">
+						</div>
+						<div class="testimonial shadow-block">
+							<p class="block-corner">“</p>
+							<div class="testimonial-info">
+								<p class="testimonial-text">Deployment ownership non-disclosure agreement vesting period
+									crowdfunding
+									success influencer partnership equity series A financing network effects user
+									experience crowdsource. Burn rate stock bootstrapping direct mailing release client
+									traction creative facebook monetization crowdfunding rockstar.</p>
+								<p class="sign">Melina</p>
+								<p>Melina Albrecht</p>
+								<p class="red-text">Founder, TingTong</p>
+							</div>
+							<span class="border-span red-block-span"></span>
+						</div>
+					</div>
+					<div class="testimonials-main-block d-flex align-items-center">
+						<div class="gradient-block green">
+							<img src="img/testimonials/six.jpg" alt="customer">
+						</div>
+						<div class="testimonial shadow-block">
+							<p class="block-corner">“</p>
+							<div class="testimonial-info">
+								<p class="testimonial-text">Deployment ownership non-disclosure agreement vesting period
+									crowdfunding
+									success influencer partnership equity series A financing network effects user
+									experience crowdsource. Burn rate stock bootstrapping direct mailing release client
+									traction creative facebook monetization crowdfunding rockstar.</p>
+								<p class="sign">John</p>
+								<p>John Deere</p>
+								<p class="green-text">Founder, John Deere</p>
+							</div>
+							<span class="border-span green-block-span"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="why-we section-wrapper white-section">
+			<div class="wrapper">
+				<div class="section-header-block">
+					<p class="count-block center">08</p>
+					<h2 class="header-h2">Why Select Us</h2>
+					<p class="header-p">We understand your requirement and provide quality works.</p>
+				</div>
+				<div class="row why-we-first-row">
+					<div class="col-sm-6 col-md-4 why-we-block">
+						<div class="why-we-head-block d-flex">
+							<img src="img/why-we/graph.png" alt="graph-logo">
+							<p>Business<br> Growth</p>
+						</div>
+						<p class="why-we-main-info">Success scrum project funding marketing seed money prototype innovator
+							direct hackathon android
+							angel investor. </p>
+					</div>
+					<div class="col-sm-6 col-md-4 why-we-block">
+						<div class="why-we-head-block d-flex">
+							<img src="img/why-we/revisions.png" alt="revisions-logo">
+							<p>Unlimited<br> Revisions</p>
+						</div>
+						<p class="why-we-main-info">Technology founders churn rate niche market long tail release iteration
+							burn rate backing. Churn rate accelerator.</p>
+					</div>
+					<div class="col-sm-6 col-md-4 why-we-block">
+						<div class="why-we-head-block d-flex">
+							<img src="img/why-we/ultimate.png" alt="ultimate-logo">
+							<p>Ultimate<br> Perfection</p>
+						</div>
+						<p class="why-we-main-info">Deployment ownership non-disclosure agreement vesting period
+							crowdfunding success influencer partnership.</p>
+					</div>
+					<div class="col-sm-6 col-md-4 why-we-block">
+							<div class="why-we-head-block d-flex">
+								<img src="img/why-we/experience.png" alt="experience-logo">
+								<p>Smart<br> Experience</p>
+							</div>
+							<p class="why-we-main-info">Deployment ownership non-disclosure agreement vesting period
+								crowdfunding success influencer partnership.</p>
+						</div>
+						<div class="col-sm-6 col-md-4 why-we-block">
+							<div class="why-we-head-block d-flex">
+								<img src="img/why-we/deadline.png" alt="deadline-logo">
+								<p>Strict<br> Deadline</p>
+							</div>
+							<p class="why-we-main-info">Technology founders churn rate niche market long tail release iteration
+								burn rate backing. Churn rate accelerator.</p>
+						</div>
+						<div class="col-sm-6 col-md-4 why-we-block">
+							<div class="why-we-head-block d-flex">
+								<img src="img/why-we/medal.png" alt="medal-logo">
+								<p>Award-Winning<br> Company</p>
+							</div>
+							<p class="why-we-main-info">Deployment ownership non-disclosure agreement vesting period
+								crowdfunding success influencer partnership.</p>
+						</div>
+				</div>
+			</div>
+		</section>
+		<section class="our-blog grey-section section-wrapper" id="blog">
+			<div class="wrapper">
+				<div class="section-header-block">
+					<p class="count-block center">09</p>
+					<h2 class="header-h2">Our Blog</h2>
+					<p class="header-p">We understand your requirement and provide quality works.</p>
+				</div>
+				<div class="row">
+					<div class="col-md-6 flex-wrap">
+						<div class="blog-article-img">
+							<img src="img/blog/facebook.jpg" alt="">
+						</div>
+						<div class="blog-block main-blog-block white-section">
+							<div class="blog-article">
+								<span class="name-span to-uppercase red-text">Damian Schreiber</span>
+								<span class="date-span">December 10, 2015</span>
+								<h4 class="blog-article-header">Facebook’s CNN livestream will test its place in the second
+									screen era</h4>
+								<p>Traction seed money infographic accelerator pivot value
+									proposition ownership business-to-consumer iteration market
+									analytics paradigm <a href="" class="red-text">Read Full Article »</a></p>
+							</div>
+							<span class="border-span red-block-span"></span>
+						</div>
+					</div>
+					<div class="col-md-6 flex-wrap">
+						<div class="blog-block white-section">
+							<div class="blog-article">
+								<span class="name-span to-uppercase green-text">Damian Schreiber</span>
+								<span class="date-span">December 10, 2015</span>
+								<h4 class="blog-article-header">Google Street View adds virtual reality support</h4>
+								<p>Traction seed money infographic accelerator pivot value
+									proposition ownership business-to-consumer iteration market
+									analytics paradigm <a href="" class="green-text">Read Full Article »</a></p>
+							</div>
+							<span class="border-span green-block-span"></span>
+						</div>
+						<div class="blog-block white-section">
+							<div class="blog-article">
+								<span class="name-span to-uppercase purple-text">Damian Schreiber</span>
+								<span class="date-span">December 10, 2015</span>
+								<h4 class="blog-article-header">Google Street View adds virtual reality support</h4>
+								<p>Traction seed money infographic accelerator pivot value
+									proposition ownership business-to-consumer iteration market
+									analytics paradigm <a href="" class="purple-text">Read Full Article »</a></p>
+							</div>
+							<span class="border-span purple-block-span"></span>
+						</div>
+						<div class="blog-block white-section">
+							<div class="blog-article">
+								<span class="name-span to-uppercase orange-text">Damian Schreiber</span>
+								<span class="date-span">December 10, 2015</span>
+								<h4 class="blog-article-header">Google Street View adds virtual reality support</h4>
+								<p>Traction seed money infographic accelerator pivot value
+									proposition ownership business-to-consumer iteration market
+									analytics paradigm <a href="" class="orange-text">Read Full Article »</a></p>
+							</div>
+							<span class="border-span orange-block-span"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="subscribe section-wrapper white-section">
+			<div class="wrapper">
+				<h4 class="subscribe-header">Subscribe to Newsletter</h4>
+				<form action="" method="get">
+					<input type="email" name="" id="" class="grey-section subscribe-input" placeholder="Enter your email">
+					<button type="submit" class="main-btn subscribe-btn red-btn btn-bg-red-revers to-uppercase">subscribe
+						now</button>
+				</form>
+			</div>
+		</section>
+		<section class="get-in-touch section-wrapper" id="contact">
+			<div class="wrapper">
+				<div class="section-header-block">
+					<p class="count-block center">10</p>
+					<h2 class="header-h2">Get in Touch</h2>
+					<p class="header-p">We understand your requirement and provide quality works.</p>
+				</div>
+				<div class="row d-flex justify-content-center">
+					<div class="col-md-8">
+						<form action="" method="get" id="get-form">
+							<div class="row">
+								<div class="col-md-6">
+									<input type="text" required placeholder="Your Name" class="get-input">
+									<input type="text" required placeholder="Subject" class="get-input">
+								</div>
+								<div class="col-md-6">
+									<input type="email" required placeholder="Your Email" class="get-input">
+									<input type="text" required placeholder="Progect Budget" class="get-input">
+								</div>
+								<div class="col-md-12 justify-content-center">
+									<textarea form="get-form" placeholder="Your Message"></textarea>
+									<button type="submit"
+										class="main-btn subscribe-btn red-btn btn-bg-red-revers to-uppercase">send
+										message</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="main-footer">
+		<div class="wrapper darkblue-section">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="logo-block d-flex justify-content-center">
+						<a href="#header" class="logo scroll"><span class="red-span">A</span>lexis</a>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="footer-contact-info">
+						<h4 class="footer-header green-text">Alexis LLC</h4>
+						<a href="https://www.google.com/maps/@44.3400405,-94.3451787,13z" class="footer-addr" target="_blank">4125 Brighton Circle Road Little Falls, MN 56345</a>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="footer-contact-info">
+						<h4 class="footer-header purple-text">Alexis LLC UK</h4>
+						<a href="https://www.google.com/maps/@44.3400405,-94.3451787,13z" class="footer-addr" target="_blank">81 Golden Knowes Road FRESHFIELD L37 6TP</a>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="footer-contact-info">
+						<h4 class="footer-header orange-text">Follow Us</h4>
+						<div class="footer-social">
+							<a href=""><img src="img/footer/facebook.png" alt="facebook-logo"></a>
+							<a href=""><img src="img/footer/twitter.png" alt="twitter-logo"></a>
+							<a href=""><img src="img/footer/insta.png" alt="instagram-logo"></a>
+							<a href=""><img src="img/footer/g+.png" alt="google-plus-logo"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom-border d-flex">
+				<span class="border-span quart red-block-span"></span>
+				<span class="border-span quart green-block-span"></span>
+				<span class="border-span quart purple-block-span"></span>
+				<span class="border-span quart orange-block-span"></span>
+			</div>
+		</div>
+	</footer>
+	<script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>

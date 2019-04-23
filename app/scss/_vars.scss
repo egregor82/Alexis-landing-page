@@ -1,0 +1,17 @@
+$default-font: "Poppins", sans-serif;
+$red: #fc5f45;
+$green: #38c695;
+$purple: #b27cf5;
+$orange: #feb960;
+$text-black: #313131;
+$white: #fff;
+$bg-darkblue: #3f4049;
+$bg-grey: #f7f7f7;
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
+
+$gutter: $grid-gutter-width;
